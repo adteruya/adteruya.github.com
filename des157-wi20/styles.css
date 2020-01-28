@@ -45,9 +45,21 @@ footer  {
     padding: 20px;
 }
 
+a:link  {
+    color: #F7F7FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(102,16,31);
+}
+
+a:visited   {
+    color: #A9CEF4;
+}
+
 footer a    {
     color: rgb(102,16,31);
-    text-decoration: none;
 }
 
 h1,h2,h3    {
@@ -71,10 +83,6 @@ h1,h2,h3    {
     height: 350px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-article ul a:hover {
-    color: rgb(102,16,31); 
 }
 
 .flex div h3    {
