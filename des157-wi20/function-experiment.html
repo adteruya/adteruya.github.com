@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>JS Experiment</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>JavaScript Experiment</h1>
+        <script>
+            /**
+            This code will request a number from the user and choose a random 
+            number from 1 to the user's number. The resulting number will be placed 
+            into an array. The user will then be prompted to choose one of two options:
+                - print the resulting number OR
+                - print the entire array of numbers generated
+            This will be in a loop, so the user can continously add numbers until 
+            satisfied. Typing "quit" will end the loop and display the array and all 
+            its elements.
+            **/
+
+            var isFinished = false;
+            var inputOne, inputTwo, randNum, result;
+            var numArray = [];
+
+            function randomInt(min, max)    {
+                return Math.floor(((max - min + 1) * (Math.random())) + min);
+            }
+
+            function numSquared(num)    {
+                var squaredNum = num * num;
+                numArray.push(squaredNum);
+                return squaredNum;
+            }
+
+            function inputValidation(input)  {
+                var isCorrect = false;
+                while (!(isCorrect))    {
+                    input = prompt("Type 'number' to display result OR 'array' to view all squared numbers:", "");
+                    input = input.toLowerCase();
+                    if (input === 'number' || input === 'array')  {
+                        isCorrect = true;
+                    } else  {
+                        console.log("Invalid input. Please try again");
+                    }
+                }
+                if (input === 'number') {
+                    return 1;
+                } else  {
+                    return 2;
+                }
+            }
+
+            function loopContinue() {
+                var moreInput = false;
+                while (!(moreInput))    {
+                    var valid = prompt("Would you like to continue? (Type 'yes' or 'no')", "");
+                    if (valid === 'yes' || valid === 'no')  {
+                        if (valid === 'yes')    {
+                            moreInput = false;
+                            break;
+                        } else  {
+                            moreInput = true;
+                            break;
+                        }
+                    } else  {
+                        console.log("Please respond corrrectly.");
+                    }
+                }
+                return moreInput;
+            }
+
+            while (!isFinished) {
+                inputOne = prompt("Please enter a number greater than 1 (decimals will be rounded down):", "");
+                // If a number is NOT inputted:
+                if (!parseInt(inputOne) || (inputOne <= 1))    {
+                    console.log("Invalid input. Please try again.");
+                    continue;
+                } else  {
+                    inputOne = Math.floor(inputOne);
+                    randNum = randomInt(1, inputOne);
+                    result = numSquared(randNum);
+                    if (inputValidation(inputTwo) === 1)    {
+                        console.log(`${randNum} * ${randNum} = ${result}`);
+                    } else  {
+                        console.log(`Array contains: [${numArray}]`);
+                    }
+                    isFinished = loopContinue();
+                }
+            }
+            console.log(`Final Array: [${numArray}]`);
+        </script>
+    </body>
+</html>
