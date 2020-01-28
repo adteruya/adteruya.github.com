@@ -7,10 +7,12 @@ body    {
     max-width: 1200px;
     min-width: 800px;
     margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 h1,h2,h3,footer  {
     font-family: 'Philosopher', sans-serif;
+    color: #7798AB;
 }
 
 h2,footer  {
@@ -23,7 +25,8 @@ header,footer   {
 }
 
 main    {
-    padding: 10px 40px 30px 40px;
+    padding: 10px 40px 40px 40px;
+    background-color: #E8DCB9;
 }
 
 img {
@@ -33,11 +36,23 @@ img {
 
 a   {
     text-decoration: none;
-    color: black;
+    color: #7798AB;
+}
+
+a:hover    {
+    color: #C1EDCC;
+}
+
+a:active    {
+    color: #E8DCB9;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+#current-page   {
+    color: #C1EDCC;
 }
