@@ -85,9 +85,3 @@ h1,h2,h3    {
     font-size: 1.5em;
     color: #A9CEF4;
 }
-
-.backImage  {
-    background-image: url("images/pattern.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
