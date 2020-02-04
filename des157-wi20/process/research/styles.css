@@ -1,6 +1,6 @@
 body    {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: thin;
     font-size: 1.0em;
     line-height: 1.3em;
     text-align: justify;
@@ -12,7 +12,7 @@ body    {
 
 h1,h2,h3,footer  {
     font-family: 'Raleway', sans-serif;
-    color: #7798AB;
+    color: #648381;
 }
 
 h2,footer  {
@@ -30,7 +30,7 @@ header,footer   {
 
 main    {
     padding: 30px;
-    background-color: #E8DCB9;
+    background-color: #E4FDE1;
 }
 
 article {
@@ -40,6 +40,7 @@ article {
 
 article p   {
     padding-top: 25px;
+    color: #575761;
 }
 
 hr  {
@@ -47,7 +48,7 @@ hr  {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: unset;
-    border-top: 6px dotted #FFFFFF;
+    border-top: 2px solid #FFBF46;
 }
 
 img {
@@ -60,11 +61,11 @@ img {
 
 a   {
     text-decoration: none;
-    color: #7798AB;
+    color: #648381;
 }
 
 a:hover    {
-    color: #C1EDCC;
+    color: #FFBF46;
 }
 
 a:active    {
@@ -78,5 +79,5 @@ a:active    {
 }
 
 #current-page   {
-    color: #C1EDCC;
+    color: #8ACB88;
 }

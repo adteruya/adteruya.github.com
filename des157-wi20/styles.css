@@ -1,6 +1,6 @@
 body    {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    font-weight: thin;
     font-size: 1.0em;
     line-height: 1.3em;
     text-align: justify;
@@ -29,7 +29,7 @@ footer  {
 }
 
 a  {
-    color: #E4FDE1;
+    color: #575761;
     text-decoration: none;
 }
 
@@ -72,8 +72,8 @@ header div  {
 }
 
 .flex div   {
-    background: #575761;
-    color: #FFFFFF;
+    background: #E4FDE1;
+    color: #575761;
     width: 270px;
     height: 350px;
     padding-top: 20px;
