@@ -7,55 +7,38 @@ body    {
     max-width: 1200px;
     min-width: 800px;
     margin: 0 auto;
-    background-color: #F7F7FF;
+    background-color: #FFFFFF;
 }
 
 header,main  {
-    max-width: 800px;
-    margin: 0 auto;
     padding-top: 20px;
-    color: rgb(102,16,31);
+    color: #648381;
 }
 
-header div  {
-    height: 250px;
-    width: 800px;
-    background-color: #F7F7FF;
-    border-style: dashed;
-    border-color: rgb(102,16,31);
-    display: inline-block;
-    text-align: center;
-}
-
-header hr, body hr   {
-    border: 1px solid rgb(102,16,31);
-}
-
-main hr {
-    border: 1px solid #A9CEF4;
+hr   {
+    border: 1px solid #FFBF46;
 }
 
 footer  {
-    color: rgb(102,16,31);
+    color: #648381;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
     height: 50px;
     width: auto;
     padding: 20px;
 }
 
 a  {
-    color: #F7F7FF;
+    color: #E4FDE1;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(102,16,31);
+    color: #FFBF46;
 }
 
 footer a, footer a:visited    {
-    color: rgb(102,16,31);
+    color: #648381;
 }
 
 h1,h2,h3    {
@@ -64,24 +47,41 @@ h1,h2,h3    {
     line-height: 0.8em;
 }
 
+header div  {
+    padding-top: 20px;
+}
+
+.processing  {
+    height: 250px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E4FDE1;
+    display: block;
+    text-align: center;
+}
+
 .flex   {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 35px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .flex div   {
-    background: rgb(0,21,20);
-    background: linear-gradient(180deg, rgba(0,21,20,1) 0%, rgba(152,68,71,1) 100%);
-    color: #F7F7FF;
-    width: 220px;
+    background: #575761;
+    color: #FFFFFF;
+    width: 270px;
     height: 350px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .flex div h3    {
     font-size: 1.5em;
-    color: #A9CEF4;
+    color: #8ACB88;
 }
