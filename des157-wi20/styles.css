@@ -51,6 +51,10 @@ header div  {
     padding-top: 20px;
 }
 
+.process    {
+    text-align: center;
+}
+
 .flex   {
     display: flex;
     flex-wrap: nowrap;
