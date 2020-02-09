@@ -23,7 +23,7 @@ header  {
 }
 
 h1  {
-    font-size: 3.0em;
+    font-size: 3.5em;
 }
 
 h3  {
@@ -62,13 +62,28 @@ a:hover    {
     padding: 50px;
 }
 
+.flex-box div form div  {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
 #current-page   {
     color: #C1C44B;
 }
 
 #image-pos  {
-    border: 2px solid #739E5A;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
     background-color: white;
-    width: 575px;
-    height: auto;
+}
+
+#image-pos img  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
