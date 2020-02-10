@@ -39,13 +39,14 @@
         else if (userAdj === "" || userVerb === "" || userName === "")  {
             alert("Please fill in all text boxes.");
         }
-        else    {   // Reaching here means all input is valid:
+        else    {   // Reaching here means all input is valid; also the section where text will change:
             let outPut = document.getElementById('output');
             outPut.innerHTML = `Your plant, ${userName}, grew ${userVerb} and is very ${userAdj}!`;
             
             // Change image in accordance to user input:
             let plantChoice = document.querySelector("img");
             if (userStyle === "flowery")    {
+                plantChoice.style.width = "55%";
                 if (userColor === "red")    {
                     plantChoice.setAttribute("src", "images/red-flowering.png");
                 } else if (userColor === "blue")    {
@@ -53,14 +54,23 @@
                 } else  {
                     plantChoice.setAttribute("src", "images/yellow-flowering.png");
                 }
-                plantChoice.style.width = "55%";
             } else if (userStyle === "spikey")  {
+                plantChoice.style.width = "70%";
                 if (userColor === "red")    {
-                    plantChoice.setAttribute("src", "images/red-flowering.png");
+                    plantChoice.setAttribute("src", "images/red-spiking.png");
                 } else if (userColor === "blue")    {
-                    plantChoice.setAttribute("src", "images/blue-flowering.png");
+                    plantChoice.setAttribute("src", "images/blue-spiking.png");
                 } else  {
-                    plantChoice.setAttribute("src", "images/yellow-flowering.png");
+                    plantChoice.setAttribute("src", "images/yellow-spiking.png");
+                }
+            } else   {
+                plantChoice.style.width = "57%";
+                if (userColor === "red")    {
+                    plantChoice.setAttribute("src", "images/red-weird.png");
+                } else if (userColor === "blue")    {
+                    plantChoice.setAttribute("src", "images/blue-weird.png");
+                } else  {
+                    plantChoice.setAttribute("src", "images/yellow-weird.png");
                 }
             }
         }
