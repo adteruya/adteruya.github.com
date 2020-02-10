@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <title>DES 157 | Studio One - Madlibs</title>
+        <script type="type/javascript" src="script.js"></script>
     </head>
     <body>
         <header>
@@ -17,17 +18,31 @@
         <div class="flex-box">
             <div>
                 <form id="plant-form">
-                    <label>What plant style do you want?</label><br>
-                    <input type="radio" name="type" value="flowery"> Flowery<br>
-                    <input type="radio" name="type" value="spikey"> Spikey<br>
-                    <input type="radio" name="type" value="weird"> Weird<br>
+                    <fieldset>
+                        <legend>What plant style do you want?</legend>
+                        <input type="radio" name="type" id="s1" value="flowery">
+                        <label for="s1"> Flowery</label>
+                        <br>
+                        <input type="radio" name="type" id="s2" value="spikey">
+                        <label for="s2"> Spikey</label>
+                        <br>
+                        <input type="radio" name="type" id="s3" value="weird">
+                        <label for="s3"> Weird</label>
+                    </fieldset>
     
                     <br>
-    
-                    <label>Color choice for the plant?</label><br>
-                    <input type="radio" name="color" value="red"> Red<br>
-                    <input type="radio" name="color" value="blue"> Blue<br>
-                    <input type="radio" name="color" value="yellow"> Yellow<br>
+
+                    <fieldset>
+                        <legend>Color choice for the plant?</legend>
+                        <input type="radio" name="color" id="c1" value="red">
+                        <label for="c1"> Red</label>
+                        <br>
+                        <input type="radio" name="color" id="c2" value="blue">
+                        <label for="c2"> Blue</label>
+                        <br>
+                        <input type="radio" name="color" id="c3" value="yellow">
+                        <label for="c3"> Yellow</label>
+                    </fieldset>
     
                     <br>
     
@@ -45,14 +60,13 @@
                     <input type="text" name="name" id="p-name"><br>
     
                     <br>
-                    <div>
-                        <input type="submit" value="View Your Plant!">
-                        <input type="reset" value="Hold Up, Let's Start Over">
-                    </div>
+
+                    <input type="submit" value="View Your Plant!">
+                    <input type="reset" value="Hold Up, Let's Start Over">
                 </form>
             </div>
             <div id="image-pos">
-                <h3>"Text Goes Here"</h3>
+                <h3 id="output">"Text Goes Here"</h3>
                 <img src="images/baby-plants.png" alt="plant graphic">
             </div>
         </div>
