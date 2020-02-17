@@ -20,6 +20,10 @@ a:hover {
     display: none;
 }
 
+#current-page   {
+    color: black;
+}
+
 /* Background Color Adjustments */
 .orange {
     background-color: #ff9933;
