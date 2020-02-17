@@ -1,3 +1,4 @@
+/* Defaults Regardless of Screen Size*/
 html    {
     color: white;
 }
@@ -15,34 +16,23 @@ a:hover {
     color: black;
 }
 
+.invisible  {
+    display: none;
+}
+
 /* Background Color Adjustments */
-.red    {
-    background-color: orangered;
-    transition: all 3s;
-}
-
 .orange {
-    background-color: orange;
+    background-color: #ff9933;
     transition: all 3s;
 }
 
-.yellow {
-    background-color: yellowgreen;
-    transition: all 3s;
-}
-
-.green  {
-    background-color: mediumseagreen;
+.pink  {
+    background-color: #ff80aa;
     transition: all 3s;
 }
 
 .blue   {
-    background-color: royalblue;
-    transition: all 3s;
-}
-
-.purple {
-    background-color: violet;
+    background-color: #3366ff;
     transition: all 3s;
 }
 
@@ -81,11 +71,30 @@ a:hover {
     .regular    {
         width: 275px;
         height: auto;
+        transition: all 0.5s;
     }
 
     .increase   {
         width: 300px;
         height: auto;
+        transition: all 0.5s;
+    }
+
+    .visible    {
+        width: 400px;
+        height: 100px;
+        background-color: #ffffff;
+        opacity: 0.7;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -200px;
+    }
+
+    .visibleText    {
+        color: black;
+        padding: 10px 20px 10px 20px;
     }
 }
 
@@ -101,6 +110,8 @@ a:hover {
         font-size: 1.25em;
         padding-top: 40px;
         padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
     footer  {
@@ -126,5 +137,32 @@ a:hover {
         padding: 20px;
     }
 
-    
+    .regular    {
+        width: 200px;
+        height: auto;
+        transition: all 0.5s;
+    }
+
+    .increase   {
+        width: 225px;
+        height: auto;
+        transition: all 0.5s;
+    }
+
+    .visible    {
+        width: 300px;
+        height: 100px;
+        background-color: #ffffff;
+        opacity: 0.7;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -150px;
+    }
+
+    .visibleText    {
+        color: black;
+        padding: 10px 20px 10px 20px;
+    }
 }
