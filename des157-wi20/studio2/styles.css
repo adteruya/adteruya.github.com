@@ -1,0 +1,130 @@
+html    {
+    color: white;
+}
+
+header, footer   {
+    text-align: center;
+}
+
+a   {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Background Color Adjustments */
+.red    {
+    background-color: orangered;
+    transition: all 3s;
+}
+
+.orange {
+    background-color: orange;
+    transition: all 3s;
+}
+
+.yellow {
+    background-color: yellowgreen;
+    transition: all 3s;
+}
+
+.green  {
+    background-color: mediumseagreen;
+    transition: all 3s;
+}
+
+.blue   {
+    background-color: royalblue;
+    transition: all 3s;
+}
+
+.purple {
+    background-color: violet;
+    transition: all 3s;
+}
+
+/* Desktop Designs */
+@media only screen and (min-width: 600px)   {
+    body    {
+        font-family: 'Raleway', sans-serif;
+        max-width: 1200px;
+        min-width: 800px;
+        margin: 0 auto;
+
+    }
+    
+    header  {
+        padding-top: 80px;
+        padding-bottom: 70px;
+        font-size: 1.5em;
+    }
+    
+    footer  {
+        padding-top: 140px;
+    }
+    
+    img {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .flex-box   {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .regular    {
+        width: 275px;
+        height: auto;
+    }
+
+    .increase   {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* Mobile Designs */
+@media only screen and (max-width: 600px)   {
+    body    {
+        font-family: 'Raleway', sans-serif;
+        max-width: 600px;
+        min-width: 400px;
+    }
+    
+    header  {
+        font-size: 1.25em;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
+    footer  {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    img {
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .flex-box   {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .flex-box div   {
+        padding: 20px;
+    }
+
+    
+}
