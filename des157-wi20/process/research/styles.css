@@ -79,6 +79,17 @@ a:active    {
     margin-right: 20px;
 }
 
+.personas img {
+    width: 800px;
+    height: auto;
+    padding: 20px;
+}
+
+.personas   {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 #academic   {
     width: auto;
 }
