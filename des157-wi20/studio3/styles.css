@@ -1,0 +1,19 @@
+/* Defaults - Regardless of Screen Size */
+body    {
+    font-family: 'Ubuntu';
+    background-color: maroon;
+    color: white;
+}
+
+header,footer   {
+    text-align: center;
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 600px)   {
+    body    {
+        max-width: 1200px;
+        min-width: 800px;
+        margin: 0 auto;
+    }
+}
