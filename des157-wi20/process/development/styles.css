@@ -90,3 +90,14 @@ a:active    {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+#paper img {
+    width: 400px;
+    height: auto;
+}
+
+#paper  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

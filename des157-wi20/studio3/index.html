@@ -16,17 +16,26 @@
             <button id="rules">Game Rules</button>
             <button id="start">Start Game</button>
         </div>
-        <div id="scores"></div>
-        <div id="all-cards">
-            <div id="card1" class="unflipped"></div>
-            <div id="card2" class="unflipped"></div>
-            <div id="card3" class="unflipped"></div>
-            <div id="card4" class="unflipped"></div>
-            <div id="card5" class="unflipped"></div>
-            <div id="card6" class="unflipped"></div>
+        <div id="player-info">
+            <div id="curr-player"></div>
+            <div id="scores"></div>
+        </div>
+        <div id="rule-info" class="invisible">
+            <h3>Rules</h3>
+            <p>By clicking start game, a player will be chosen by random to start. On their turn, each player will choose two cards. If the cards match, the current player gets a point and chooses again. If the cards do not match, the next player gets a try. The player with the most points after all cards have been matched, wins!</p>
+            <button id="exit-rules">Okay</button>
+        </div>
+        <div class="all-cards">
+            <div id="card1" class="unflipped"><img src="images/card-back.png" id="circles1" class="none"></div>
+            <div id="card2" class="unflipped"><img src="images/card-back.png" id="squares1" class="none"></div>
+            <div id="card3" class="unflipped"><img src="images/card-back.png" id="circles2" class="none"></div>
+            <div id="card4" class="unflipped"><img src="images/card-back.png" id="triangles1" class="none"></div>
+            <div id="card5" class="unflipped"><img src="images/card-back.png" id="triangles2" class="none"></div>
+            <div id="card6" class="unflipped"><img src="images/card-back.png" id="squares2" class="none"></div>
         </div>
         <footer>
             <h3><a href="mailto:&#097;&#100;&#116;&#101;&#114;&#117;&#121;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a> | <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></h3>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
