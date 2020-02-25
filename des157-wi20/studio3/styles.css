@@ -5,7 +5,7 @@ body    {
     color: #FFF8F0;
 }
 
-header, footer, #button-guides, h4 {
+header, footer, #button-guides, h4, h2 {
     text-align: center;
 }
 
@@ -163,3 +163,6 @@ footer h3::after    {
 }
 
 /* Mobile Layout */
+@media only screen and (max-width: 600px)   {
+    
+}
