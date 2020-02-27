@@ -1,0 +1,78 @@
+body    {
+    font-family: 'Ubuntu';
+    background-color: #92140C;
+    color: #FFF8F0;
+    text-align: center;
+}
+
+a   {
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: #FFF8F0;
+}
+
+a:hover {
+    color: #1E1E24;
+}
+
+#current-page   {
+    color: #89B6A5;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    font-size: 1.0em;
+    background-color: #92140C;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+    border-radius: 20px;
+    font-family: 'Ubuntu';
+    transition-duration: 0.5s;
+}
+
+button:hover    {
+    background-color: #FFF8F0;
+    border-color: #92140C;
+    color: #92140C;
+}
+
+.before button {
+    display: block;
+}
+
+/** For stylizing lines: code courtesy of https://stackoverflow.com/questions/23390654/title-with-hr-line **/
+h1, footer h3  {
+    position: relative;
+    display: inline-block;
+}
+
+h1::before, h1::after    {
+    content:' ';
+    display: block;
+    position: absolute; 
+    top: 50%; 
+    left: -540px;
+    width: 500px;
+    border-bottom: 1px solid #FFF8F0;
+}
+
+h1::after {
+    left:auto; 
+    right:-540px;
+}
+
+footer h3::before, footer h3::after {
+    content:' ';
+    display: block;
+    position: absolute; 
+    top: 50%; 
+    left: -470px;
+    width: 450px;
+    border-bottom: 1px solid #FFF8F0;
+}
+
+footer h3::after    {
+    left: auto;
+    right: -470px;
+}
+/*********************************************************************************************************/
