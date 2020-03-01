@@ -5,6 +5,10 @@ body    {
     text-align: center;
 }
 
+h1  {
+    font-size: 3.5em;
+}
+
 a   {
     transition-duration: 0.3s;
     text-decoration: none;
@@ -22,9 +26,10 @@ a:hover {
 button {
     padding: 10px 20px 10px 20px;
     font-size: 1.0em;
-    background-color: #92140C;
+    background-color: transparent;
     border-color: #FFF8F0;
     color: #FFF8F0;
+    border-width: 2px;
     border-radius: 20px;
     font-family: 'Ubuntu';
     transition-duration: 0.5s;
@@ -36,8 +41,19 @@ button:hover    {
     color: #92140C;
 }
 
-.before button {
+.before {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 130px;
+    padding-bottom: 175px;
+}
+
+.before button  {
+    width: 100%;
     display: block;
+    height: 50px;
+    margin: 15px;
 }
 
 /** For stylizing lines: code courtesy of https://stackoverflow.com/questions/23390654/title-with-hr-line **/
@@ -51,14 +67,14 @@ h1::before, h1::after    {
     display: block;
     position: absolute; 
     top: 50%; 
-    left: -540px;
-    width: 500px;
+    left: -500px;
+    width: 450px;
     border-bottom: 1px solid #FFF8F0;
 }
 
 h1::after {
     left:auto; 
-    right:-540px;
+    right:-500px;
 }
 
 footer h3::before, footer h3::after {
@@ -66,13 +82,13 @@ footer h3::before, footer h3::after {
     display: block;
     position: absolute; 
     top: 50%; 
-    left: -470px;
-    width: 450px;
+    left: -460px;
+    width: 400px;
     border-bottom: 1px solid #FFF8F0;
 }
 
 footer h3::after    {
     left: auto;
-    right: -470px;
+    right: -460px;
 }
 /*********************************************************************************************************/
