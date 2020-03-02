@@ -57,7 +57,7 @@
         // Adding text:
         button_nav.setAttribute('class', 'invisible');
         box.setAttribute('class', 'option-text');
-        box.innerHTML = '<div><h3>Options</h3><div class="reverse"><h4>Number of Cards</h4><div id="card-options"><button id="four" class="not-chosen">4</button><button id="six" class="chosen">6</button><button id="eight" class="not-chosen">8</button><button id="ten" class="not-chosen">10</button></div></div><div class="reverse"><h4>Theme Color</h4><div id="color-options"><button id="r" class="chosen">Red</button><button id="y" class="not-chosen">Yellow</button><button id="b" class="not-chosen">Blue</button></div></div><div id="exit-options" class="reverse"><button>Okay</button></div></div>';
+        box.innerHTML = '<div><h3>Options</h3><div class="reverse"><h4>Number of Cards</h4><div id="card-options"><button id="four" class="not-chosen">4</button><button id="six" class="not-chosen">6</button><button id="eight" class="not-chosen">8</button><button id="ten" class="not-chosen">10</button></div></div><div class="reverse"><h4>Theme Color</h4><div id="color-options"><button id="r" class="not-chosen">Red</button><button id="y" class="not-chosen">Yellow</button><button id="b" class="not-chosen">Blue</button></div></div><div id="exit-options" class="reverse"><button>Okay</button></div></div>';
 
         // Stylizing:
         let card_btns = box.querySelectorAll('#card-options button');
@@ -65,35 +65,41 @@
 
         if (match.theme_color == 'red') {
             for (let i = 0; i < card_btns.length; i++)  {
-                if (card_btns[i].className == 'chosen') {
+                if (card_btns[i].innerHTML == match.end_game_condition) {
                     card_btns[i].style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].className = 'chosen';
                 }
             }
             for (let i = 0; i < color_btns.length; i++) {
-                if (color_btns[i].className == 'chosen')    {
+                if (color_btns[i].id == 'r')    {
                     color_btns[i].style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                    color_btns[i].className = 'chosen';
                 }
             }
         } else if (match.theme_color == 'yellow')   {
             for (let i = 0; i < card_btns.length; i++)  {
-                if (card_btns[i].className == 'chosen') {
+                if (card_btns[i].innerHTML == match.end_game_condition) {
                     card_btns[i].style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].className = 'chosen';
                 }
             }
             for (let i = 0; i < color_btns.length; i++) {
-                if (color_btns[i].className == 'chosen')    {
+                if (color_btns[i].id == 'y')    {
                     color_btns[i].style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                    color_btns[i].className = 'chosen';
                 }
             }
         } else  {
             for (let i = 0; i < card_btns.length; i++)  {
-                if (card_btns[i].className == 'chosen') {
+                if (card_btns[i].innerHTML == match.end_game_condition) {
                     card_btns[i].style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].className = 'chosen';
                 }
             }
             for (let i = 0; i < color_btns.length; i++) {
-                if (color_btns[i].className == 'chosen')    {
+                if (color_btns[i].id == 'b')    {
                     color_btns[i].style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                    color_btns[i].className = 'chosen';
                 }
             }
         }
@@ -208,15 +214,16 @@
             for (let i = 0; i < color_btns.length; i++)  {
                 color_btns[i].className = 'not-chosen';
                 color_btns[i].style.cssText = 'background-color: transparent; border-color: #92140C; color: #92140C;';
-            } for (let i = 0; i < card_btns.length; i++) {
+            } 
+            document.getElementById('r').className = 'chosen';
+            document.getElementById('r').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+            for (let i = 0; i < card_btns.length; i++) {
                 if (card_btns[i].className == 'chosen') {
                     card_btns[i].style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
                 } else  {
                     card_btns[i].style.cssText = 'background-color: #FFF8F0; border-color: #92140C; color: #92140C;';
                 }
             }
-            document.getElementById('r').className = 'chosen';
-            document.getElementById('r').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
         });
 
         document.getElementById('y').addEventListener('click', function(e)  {
@@ -226,15 +233,16 @@
             for (let i = 0; i < color_btns.length; i++)  {
                 color_btns[i].className = 'not-chosen';
                 color_btns[i].style.cssText = 'background-color: transparent; border-color: #E6AC00; color: #E6AC00;';
-            } for (let i = 0; i < card_btns.length; i++) {
+            }
+            document.getElementById('y').className = 'chosen';
+            document.getElementById('y').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+            for (let i = 0; i < card_btns.length; i++) {
                 if (card_btns[i].className == 'chosen') {
                     card_btns[i].style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
                 } else  {
                     card_btns[i].style.cssText = 'background-color: #FFF8F0; border-color: #E6AC00; color: #E6AC00;';
                 }
             }
-            document.getElementById('y').className = 'chosen';
-            document.getElementById('y').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
         });
 
         document.getElementById('b').addEventListener('click', function(e)  {
@@ -244,15 +252,16 @@
             for (let i = 0; i < color_btns.length; i++)  {
                 color_btns[i].className = 'not-chosen';
                 color_btns[i].style.cssText = 'background-color: transparent; border-color: #3366CC; color: #3366CC;';
-            } for (let i = 0; i < card_btns.length; i++) {
+            } 
+            document.getElementById('b').className = 'chosen';
+            document.getElementById('b').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+            for (let i = 0; i < card_btns.length; i++) {
                 if (card_btns[i].className == 'chosen') {
                     card_btns[i].style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
                 } else  {
                     card_btns[i].style.cssText = 'background-color: #FFF8F0; border-color: #3366CC; color: #3366CC;';
                 }
             }
-            document.getElementById('b').className = 'chosen';
-            document.getElementById('b').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
         });
 
         // Click to exit options:
