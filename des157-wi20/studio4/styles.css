@@ -1,8 +1,20 @@
 body    {
     font-family: 'Ubuntu';
-    background-color: #92140C;
-    color: #FFF8F0;
     text-align: center;
+}
+
+header, footer  {
+    width: 100%;
+    position: fixed;
+}
+
+header  {
+    top: 0;
+}
+
+footer  {
+    bottom: 0;
+    padding-bottom: 40px;
 }
 
 h1  {
@@ -15,38 +27,21 @@ a   {
     color: #FFF8F0;
 }
 
-a:hover {
-    color: #1E1E24;
-}
-
-#current-page   {
-    color: #89B6A5;
-}
-
 button {
     padding: 10px 20px 10px 20px;
     font-size: 1.0em;
-    background-color: transparent;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
     border-width: 2px;
     border-radius: 20px;
     font-family: 'Ubuntu';
     transition-duration: 0.5s;
 }
 
-button:hover    {
-    background-color: #FFF8F0;
-    border-color: #92140C;
-    color: #92140C;
-}
-
 .before {
     width: 300px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 130px;
-    padding-bottom: 175px;
+    padding-top: 300px;
 }
 
 .before button  {
@@ -55,6 +50,68 @@ button:hover    {
     height: 50px;
     margin: 15px;
 }
+
+.rule-text, .option-text {
+    background-color: #FFF8F0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    text-align: justify;
+    padding: 20px 30px 20px 30px;
+}
+
+.invisible  {
+    display: none;
+}
+
+#current-page   {
+    color: #89B6A5;
+}
+
+/** Color Styling for Themes **/
+/** Red **/
+.red    {
+    background-color: #92140C;
+    color: #FFF8F0;
+}
+
+.red a:hover {
+    color: #1E1E24;
+}
+
+.red button {
+    background-color: transparent;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+}
+
+.red button:hover  {
+    background-color: #FFF8F0;
+    border-color: #92140C;
+    color: #92140C;
+}
+
+.red .reverse button  {
+    background-color: transparent;
+    border-color: #92140C;
+    color: #92140C;
+}
+
+.red .reverse button:hover  {
+    background-color: #92140C;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+}
+
+.red .rule-text, .red .option-text {
+    color: #92140C;
+}
+
+/** Blue **/
+
+/** Yellow **/
+/****************************************/
 
 /** For stylizing lines: code courtesy of https://stackoverflow.com/questions/23390654/title-with-hr-line **/
 h1, footer h3  {
