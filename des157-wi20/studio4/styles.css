@@ -72,6 +72,7 @@ button {
 /** Color Styling for Themes **/
 /** Red **/
 .red    {
+    transition-duration: 1.0s;
     background-color: #92140C;
     color: #FFF8F0;
 }
@@ -108,9 +109,83 @@ button {
     color: #92140C;
 }
 
-/** Blue **/
-
 /** Yellow **/
+.yellow    {
+    transition-duration: 1.0s;
+    background-color: #E6AC00;
+    color: #FFF8F0;
+}
+
+.yellow a:hover {
+    color: #1E1E24;
+}
+
+.yellow button {
+    background-color: transparent;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+}
+
+.yellow button:hover  {
+    background-color: #FFF8F0;
+    border-color: #E6AC00;
+    color: #E6AC00;
+}
+
+.yellow .reverse button  {
+    background-color: transparent;
+    border-color: #E6AC00;
+    color: #E6AC00;
+}
+
+.yellow .reverse button:hover  {
+    background-color: #E6AC00;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+}
+
+.yellow .rule-text, .yellow .option-text {
+    color: #E6AC00;
+}
+
+/** Blue **/
+.blue    {
+    transition-duration: 0.5s;
+    background-color: #3366CC;
+    color: #FFF8F0;
+}
+
+.blue a:hover {
+    color: #1E1E24;
+}
+
+.blue button {
+    background-color: transparent;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+}
+
+.blue button:hover  {
+    background-color: #FFF8F0;
+    border-color: #3366CC;
+    color: #3366CC;
+}
+
+.blue .reverse button  {
+    background-color: transparent;
+    border-color: #3366CC;
+    color: #3366CC;
+}
+
+.blue .reverse button:hover  {
+    background-color: #3366CC;
+    border-color: #FFF8F0;
+    color: #FFF8F0;
+}
+
+.blue .rule-text, .blue .option-text {
+    color: #3366CC;
+}
 /****************************************/
 
 /** For stylizing lines: code courtesy of https://stackoverflow.com/questions/23390654/title-with-hr-line **/
