@@ -40,6 +40,7 @@
         document.getElementById('exit-rules').style.cssText = 'text-align: center; margin: auto; padding: 10px 0;';
         box.querySelector('h3').style.textAlign = 'center';
         box.querySelector('h3').style.marginTop = '10px';
+        box.style.borderRadius = '20px';
 
         // Click to exit rules:
         document.getElementById('exit-rules').addEventListener('click', function(e) {
@@ -69,43 +70,44 @@
         document.getElementById('card-options').style.cssText = 'margin: 5px 0; text-align: center;';
         document.getElementById('color-options').style.cssText = 'margin: 5px 0; text-align: center;';
         document.querySelector('.centered').style.padding = '120px 0';
+        box.style.borderRadius = '20px';
 
         if (match.theme_color == 'red') {
             for (let i = 0; i < card_btns.length; i++)  {
                 if (card_btns[i].innerHTML == match.end_game_condition) {
-                    card_btns[i].style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
                     card_btns[i].className = 'chosen';
                 }
             }
             for (let i = 0; i < color_btns.length; i++) {
                 if (color_btns[i].id == 'r')    {
-                    color_btns[i].style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                    color_btns[i].style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
                     color_btns[i].className = 'chosen';
                 }
             }
         } else if (match.theme_color == 'yellow')   {
             for (let i = 0; i < card_btns.length; i++)  {
                 if (card_btns[i].innerHTML == match.end_game_condition) {
-                    card_btns[i].style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
                     card_btns[i].className = 'chosen';
                 }
             }
             for (let i = 0; i < color_btns.length; i++) {
                 if (color_btns[i].id == 'y')    {
-                    color_btns[i].style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                    color_btns[i].style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
                     color_btns[i].className = 'chosen';
                 }
             }
         } else  {
             for (let i = 0; i < card_btns.length; i++)  {
                 if (card_btns[i].innerHTML == match.end_game_condition) {
-                    card_btns[i].style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
                     card_btns[i].className = 'chosen';
                 }
             }
             for (let i = 0; i < color_btns.length; i++) {
                 if (color_btns[i].id == 'b')    {
-                    color_btns[i].style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                    color_btns[i].style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
                     color_btns[i].className = 'chosen';
                 }
             }
@@ -127,21 +129,21 @@
             for (let i = 0; i < card_btns.length; i++)  {
                 card_btns[i].className = 'not-chosen';
                 if (match.theme_color == 'red') {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #92140C; color: #92140C;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #ff6666; color: #ff6666;';
                 } else if (match.theme_color == 'yellow')  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #E6AC00; color: #E6AC00;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #e69900; color: #e69900;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #3366CC; color: #3366CC;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #0099cc; color: #0099cc;';
                 }
             }
             match.end_game_condition = 4;
             document.getElementById('four').className = 'chosen';
             if (match.theme_color == 'red') {
-                document.getElementById('four').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('four').style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
             } else if (match.theme_color == 'yellow')   {
-                document.getElementById('four').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('four').style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
             } else  {
-                document.getElementById('four').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('four').style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
             }
         });
 
@@ -150,21 +152,21 @@
             for (let i = 0; i < card_btns.length; i++)  {
                 card_btns[i].className = 'not-chosen';
                 if (match.theme_color == 'red') {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #92140C; color: #92140C;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #ff6666; color: #ff6666;';
                 } else if (match.theme_color == 'yellow')  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #E6AC00; color: #E6AC00;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #e69900; color: #e69900;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #3366CC; color: #3366CC;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #0099cc; color: #0099cc;';
                 }
             }
             match.end_game_condition = 6;
             document.getElementById('six').className = 'chosen';
             if (match.theme_color == 'red') {
-                document.getElementById('six').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('six').style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
             } else if (match.theme_color == 'yellow')   {
-                document.getElementById('six').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('six').style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
             } else  {
-                document.getElementById('six').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('six').style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
             }
         });
 
@@ -173,21 +175,21 @@
             for (let i = 0; i < card_btns.length; i++)  {
                 card_btns[i].className = 'not-chosen';
                 if (match.theme_color == 'red') {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #92140C; color: #92140C;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #ff6666; color: #92140C;';
                 } else if (match.theme_color == 'yellow')  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #E6AC00; color: #E6AC00;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #e69900; color: #e69900;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #3366CC; color: #3366CC;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #0099cc; color: #0099cc;';
                 }
             }
             match.end_game_condition = 8;
             document.getElementById('eight').className = 'chosen';
             if (match.theme_color == 'red') {
-                document.getElementById('eight').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('eight').style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
             } else if (match.theme_color == 'yellow')   {
-                document.getElementById('eight').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('eight').style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
             } else  {
-                document.getElementById('eight').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('eight').style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
             }
         });
 
@@ -196,21 +198,21 @@
             for (let i = 0; i < card_btns.length; i++)  {
                 card_btns[i].className = 'not-chosen';
                 if (match.theme_color == 'red') {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #92140C; color: #92140C;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #ff6666; color: #ff6666;';
                 } else if (match.theme_color == 'yellow')  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #E6AC00; color: #E6AC00;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #e69900; color: #e69900;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #3366CC; color: #3366CC;';
+                    card_btns[i].style.cssText = 'background-color: transparent; border-color: #0099cc; color: #0099cc;';
                 }
             }
             match.end_game_condition = 10;
             document.getElementById('ten').className = 'chosen';
             if (match.theme_color == 'red') {
-                document.getElementById('ten').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('ten').style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
             } else if (match.theme_color == 'yellow')   {
-                document.getElementById('ten').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('ten').style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
             } else  {
-                document.getElementById('ten').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                document.getElementById('ten').style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
             }
         });
 
@@ -221,15 +223,15 @@
             document.querySelector('body').className = 'red';
             for (let i = 0; i < color_btns.length; i++)  {
                 color_btns[i].className = 'not-chosen';
-                color_btns[i].style.cssText = 'background-color: transparent; border-color: #92140C; color: #92140C;';
+                color_btns[i].style.cssText = 'background-color: transparent; border-color: #ff6666; color: #ff6666;';
             } 
             document.getElementById('r').className = 'chosen';
-            document.getElementById('r').style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+            document.getElementById('r').style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
             for (let i = 0; i < card_btns.length; i++) {
                 if (card_btns[i].className == 'chosen') {
-                    card_btns[i].style.cssText = 'background-color: #92140C; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].style.cssText = 'background-color: #ff6666; border-color: #f2f2f2; color: #f2f2f2;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: #FFF8F0; border-color: #92140C; color: #92140C;';
+                    card_btns[i].style.cssText = 'background-color: #f2f2f2; border-color: #ff6666; color: #ff6666;';
                 }
             }
         });
@@ -240,15 +242,15 @@
             document.querySelector('body').className = 'yellow';
             for (let i = 0; i < color_btns.length; i++)  {
                 color_btns[i].className = 'not-chosen';
-                color_btns[i].style.cssText = 'background-color: transparent; border-color: #E6AC00; color: #E6AC00;';
+                color_btns[i].style.cssText = 'background-color: transparent; border-color: #e69900; color: #e69900;';
             }
             document.getElementById('y').className = 'chosen';
-            document.getElementById('y').style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+            document.getElementById('y').style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
             for (let i = 0; i < card_btns.length; i++) {
                 if (card_btns[i].className == 'chosen') {
-                    card_btns[i].style.cssText = 'background-color: #E6AC00; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].style.cssText = 'background-color: #e69900; border-color: #f2f2f2; color: #f2f2f2;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: #FFF8F0; border-color: #E6AC00; color: #E6AC00;';
+                    card_btns[i].style.cssText = 'background-color: #f2f2f2; border-color: #e69900; color: #e69900;';
                 }
             }
         });
@@ -259,15 +261,15 @@
             document.querySelector('body').className = 'blue';
             for (let i = 0; i < color_btns.length; i++)  {
                 color_btns[i].className = 'not-chosen';
-                color_btns[i].style.cssText = 'background-color: transparent; border-color: #3366CC; color: #3366CC;';
+                color_btns[i].style.cssText = 'background-color: transparent; border-color: #0099cc; color: #0099cc;';
             } 
             document.getElementById('b').className = 'chosen';
-            document.getElementById('b').style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+            document.getElementById('b').style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
             for (let i = 0; i < card_btns.length; i++) {
                 if (card_btns[i].className == 'chosen') {
-                    card_btns[i].style.cssText = 'background-color: #3366CC; border-color: #FFF8F0; color: #FFF8F0;';
+                    card_btns[i].style.cssText = 'background-color: #0099cc; border-color: #f2f2f2; color: #f2f2f2;';
                 } else  {
-                    card_btns[i].style.cssText = 'background-color: #FFF8F0; border-color: #3366CC; color: #3366CC;';
+                    card_btns[i].style.cssText = 'background-color: #f2f2f2; border-color: #0099cc; color: #0099cc;';
                 }
             }
         });
@@ -281,4 +283,5 @@
         });
     });
 
+    // Click to Start Game:
 }());

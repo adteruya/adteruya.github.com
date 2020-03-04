@@ -24,7 +24,7 @@ h1   {
 a   {
     transition-duration: 0.3s;
     text-decoration: none;
-    color: #FFF8F0;
+    color: #1E1E24;
 }
 
 button {
@@ -48,10 +48,19 @@ button {
 }
 
 .links  {
-    border-width: 2px;
-    border-color: #FFF8F0;
-    border-style: double;
-    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 14px 22px;
+    text-align: center;
+}
+
+#head   {
+    width: 37%;
+}
+
+#foot    {
+    float: right;
+    width: 22%;
 }
 
 .before {
@@ -68,7 +77,7 @@ button {
 
 .rule-text, .option-text {
     margin: auto;
-    background-color: #FFF8F0;
+    background-color: #f2f2f2;
     width: 500px;
     text-align: justify;
     padding: 20px 30px 20px 30px;
@@ -76,111 +85,121 @@ button {
 
 .invisible  { display: none; }
 
-#current-page   { color: #89B6A5; }
-
 /** Color Styling for Themes **/
 /** Red **/
 .red    {
     transition-duration: 1.0s;
-    background-color: #92140C;
-    color: #FFF8F0;
+    background-color: #ff6666;
+    color: #f2f2f2;
 }
 
-.red a:hover { color: #1E1E24; }
+.red #current-page  { color: #79d279; }
+
+.red h4, .red h3  { color: #ff6666; }
+
+.red a:hover { color: #79d279; }
 
 .red button {
     background-color: transparent;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 .red button:hover  {
-    background-color: #FFF8F0;
-    border-color: #92140C;
-    color: #92140C;
+    background-color: #f2f2f2;
+    border-color: #ff6666;
+    color: #ff6666;
 }
 
 .red .reverse button  {
     background-color: transparent;
-    border-color: #92140C;
-    color: #92140C;
+    border-color: #ff6666;
+    color: #ff6666;
 }
 
 .red .reverse button:hover  {
-    background-color: #92140C;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
+    background-color: #ff6666;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
-.red .rule-text, .red .option-text { color: #92140C; }
+.red .rule-text, .red .option-text { color: #ff6666; }
 
 /** Yellow **/
 .yellow    {
     transition-duration: 1.0s;
-    background-color: #E6AC00;
-    color: #FFF8F0;
+    background-color: #e69900;
+    color: #f2f2f2;
 }
 
-.yellow a:hover { color: #1E1E24; }
+.yellow #current-page  { color: #bf80ff; }
+
+.yellow h4, .yellow h3  { color: #e69900; }
+
+.yellow a:hover { color: #bf80ff; }
 
 .yellow button {
     background-color: transparent;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 .yellow button:hover  {
-    background-color: #FFF8F0;
-    border-color: #E6AC00;
-    color: #E6AC00;
+    background-color: #f2f2f2;
+    border-color: #e69900;
+    color: #e69900;
 }
 
 .yellow .reverse button  {
     background-color: transparent;
-    border-color: #E6AC00;
-    color: #E6AC00;
+    border-color: #e69900;
+    color: #e69900;
 }
 
 .yellow .reverse button:hover  {
-    background-color: #E6AC00;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
+    background-color: #e69900;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
-.yellow .rule-text, .yellow .option-text { color: #E6AC00; }
+.yellow .rule-text, .yellow .option-text { color: #e69900; }
 
 /** Blue **/
 .blue    {
     transition-duration: 0.5s;
-    background-color: #3366CC;
-    color: #FFF8F0;
+    background-color: #0099cc;
+    color: #f2f2f2;
 }
 
-.blue a:hover { color: #1E1E24; }
+.blue #current-page  { color: #ffa64d; }
+
+.blue h4, .blue h3  { color: #0099cc; }
+
+.blue a:hover { color: #ffa64d; }
 
 .blue button {
     background-color: transparent;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 .blue button:hover  {
-    background-color: #FFF8F0;
-    border-color: #3366CC;
-    color: #3366CC;
+    background-color: #f2f2f2;
+    border-color: #0099cc;
+    color: #0099cc;
 }
 
 .blue .reverse button  {
     background-color: transparent;
-    border-color: #3366CC;
-    color: #3366CC;
+    border-color: #0099cc;
+    color: #0099cc;
 }
 
 .blue .reverse button:hover  {
-    background-color: #3366CC;
-    border-color: #FFF8F0;
-    color: #FFF8F0;
+    background-color: #0099cc;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
-.blue .rule-text, .blue .option-text { color: #3366CC; }
+.blue .rule-text, .blue .option-text { color: #0099cc; }
 /****************************************/
