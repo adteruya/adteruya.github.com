@@ -32,15 +32,19 @@
         // Adding text:
         button_nav.setAttribute('class', 'invisible');
         box.setAttribute('class', 'rule-text');
-        box.innerHTML = '<div><h3>Rules</h3><p>By clicking start game, a player will be chosen by random to start. On their turn, each player will choose two cards. <strong>If the cards match, the current player gets a point and chooses again</strong>. However, if the cards <strong>do not match</strong>, the next player gets a try. The player with the most points after all cards have been matched, wins!</p><div id="exit-rules" class="reverse"><button>Okay</button></div></div>';
+        box.innerHTML = '<div><h3>Rules</h3><div id="rules-text"><p>By clicking start game, a player will be chosen by random to start. On their turn, each player will choose two cards. <strong>If the cards match, the current player gets a point and chooses again</strong>. However, if the cards <strong>do not match</strong>, the next player gets a try. The player with the most points after all cards have been matched, wins!</p></div><div id="exit-rules" class="reverse"><button>Okay</button></div></div>';
 
         // Stylizing:
-        document.getElementById('exit-rules').style.cssText = 'text-align: center; margin-left: auto; margin-right: auto;';
+        document.querySelector('.centered').style.padding = '140px 0';
+        document.getElementById('rules-text').style.cssText = 'text-align: justify; padding: 10px 20px;';
+        document.getElementById('exit-rules').style.cssText = 'text-align: center; margin: auto; padding: 10px 0;';
         box.querySelector('h3').style.textAlign = 'center';
+        box.querySelector('h3').style.marginTop = '10px';
 
         // Click to exit rules:
         document.getElementById('exit-rules').addEventListener('click', function(e) {
             e.preventDefault();
+            document.querySelector('.centered').style.padding = '160px 0';
             box.setAttribute('class', 'invisible');
             if (curr_state == 0)    {
                 button_nav.setAttribute('class', 'before');
@@ -62,6 +66,9 @@
         // Stylizing:
         let card_btns = box.querySelectorAll('#card-options button');
         let color_btns = box.querySelectorAll('#color-options button');
+        document.getElementById('card-options').style.cssText = 'margin: 5px 0; text-align: center;';
+        document.getElementById('color-options').style.cssText = 'margin: 5px 0; text-align: center;';
+        document.querySelector('.centered').style.padding = '120px 0';
 
         if (match.theme_color == 'red') {
             for (let i = 0; i < card_btns.length; i++)  {
@@ -104,13 +111,14 @@
             }
         }
 
-        box.style.marginTop = '250px';
-        document.getElementById('exit-options').style.cssText = 'text-align: center; margin-left: auto; margin-right: auto; padding-bottom: 20px; padding-top: 10px;';
+        document.getElementById('exit-options').style.cssText = 'text-align: center; margin: auto; padding: 10px 0;';
         box.querySelector('h3').style.textAlign = 'center';
+        box.querySelector('h3').style.marginTop = '10px';
 
         let h4 = box.querySelectorAll('h4');
         for (let i = 0; i < h4.length; i++) {
             h4[i].style.textAlign = 'center';
+            h4[i].style.margin = '10px 0';
         }
 
         // Click to change number of cards in game:
@@ -267,6 +275,7 @@
         // Click to exit options:
         document.getElementById('exit-options').addEventListener('click', function(e) {
             e.preventDefault();
+            document.querySelector('.centered').style.padding = '160px 0';
             box.setAttribute('class', 'invisible');
             button_nav.setAttribute('class', 'before');
         });
