@@ -21,10 +21,17 @@ h1   {
     margin-bottom: 10px;
 }
 
+p   { color: #1E1E24; }
+
 a   {
     transition-duration: 0.3s;
     text-decoration: none;
     color: #1E1E24;
+}
+
+img {
+    height: 230px;
+    width: auto;
 }
 
 button {
@@ -75,12 +82,33 @@ button {
     margin: 10px;
 }
 
-.rule-text, .option-text {
+.rule-text, .option-text, .score-text {
     margin: auto;
     background-color: #f2f2f2;
     width: 500px;
     text-align: justify;
+    border-radius: 20px;
     padding: 20px 30px 20px 30px;
+}
+
+.score-text {
+    margin: 15px auto;
+}
+
+.cards  {
+    width: 100%;
+    margin: auto;
+}
+
+.all-cards  {
+    margin: 25px auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-cards div  {
+    margin: 10px;
 }
 
 .invisible  { display: none; }
