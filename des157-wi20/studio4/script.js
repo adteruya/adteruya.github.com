@@ -284,4 +284,9 @@
     });
 
     // Click to Start Game:
+    document.getElementById('start').addEventListener('click', function (e) {
+        e.preventDefault();
+        button_nav.className = 'after';
+        button_nav.innerHTML = '<button id="reset">Reset</button>';
+    });
 }());

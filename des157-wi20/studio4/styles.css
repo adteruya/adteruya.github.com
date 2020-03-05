@@ -63,7 +63,7 @@ button {
     width: 22%;
 }
 
-.before {
+.before, .after {
     width: 300px;
     margin: auto;
 }
