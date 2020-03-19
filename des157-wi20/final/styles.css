@@ -107,12 +107,38 @@ a    {
     margin: 50px;
 }
 
-#toc-info h2, #ocean-text h2, #forest-text h2, #city-text h2   {
+#toc-info h2, #site-info h2, #site-info h3, #ocean-text h2, #forest-text h2, #city-text h2   {
     margin-bottom: 20px;
 }
 
-#toc-info button    {
+#toc-info button, #site-info button    {
     margin-top: 20px;
+}
+
+#site-info  {
+    text-align: center;
+    background-color: #584030;
+    color: #F5F6F7;
+    padding: 30px;
+    margin: 50px;
+}
+
+#site-info p    {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#site-info button   {
+    border-color: #F5F6F7;
+    color: #F5F6F7;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+#site-info button:hover {
+    background-color: #F5F6F7;
+    color: #584030;
+    transition-duration: 0.5s;
 }
 
 #ocean-text, #forest-text, #city-text   {
