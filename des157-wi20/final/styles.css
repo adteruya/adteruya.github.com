@@ -61,9 +61,10 @@ button:hover    {
 img {
     height: 220px;
     width: auto;
+    transition-duration: 0.5s;
 }
 
-.img-styling    {
+a    {
     padding: auto 10px;
 }
 
@@ -89,12 +90,52 @@ img {
     border-width: 3px;
     border-color: #584030;
     padding: 25px;
+    margin-top: 250px;
 }
 
 #quote h3   {
     text-align: right;
 }
 
+#home-page  {
+    margin-left: 50px;
+}
+
 #toc-info   {
-    
+    background-color: #DAFFA0;
+    padding: 30px;
+    margin: 50px;
+}
+
+#toc-info h2, #ocean-text h2, #forest-text h2, #city-text h2   {
+    margin-bottom: 20px;
+}
+
+#toc-info button    {
+    margin-top: 20px;
+}
+
+#ocean-text, #forest-text, #city-text   {
+    text-align: center;
+    background-color: #F5F6F7;
+    padding: 30px;
+    margin: 50px;
+}
+
+#ocean-text img, #forest-text img, #city-text img   {
+    height: 270px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+#ocean-text a img, #forest-text a img, #city-text a img   {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin: 10px 5px 0px 5px;
+    height: 75px;
+    width: auto;
+}
+
+#ocean-text p, #forest-text p, #city-text p   {
+    text-align: left;
 }
